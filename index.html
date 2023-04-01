@@ -1,11 +1,5 @@
-<!-- HTML Hyper Text Markup Language
-2 HTML XML tabanlı bir dil hiyerarşik bir dil
-3 lang :language attribute
-4 head tag gözle göremediğimiz site hakkındaki meta bilgiler barındırır
-SEO Search Engine Optimization
-5 -->
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,70 +10,32 @@ SEO Search Engine Optimization
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- id:paragraf1 font size:12
-    id:paragraf2 font size:14
-    class:paragraf font family: times new roman -->
-<p id="paragraf1" name="paragraf1" class="paragraf">Merhaba Dünya</p>   
-<p id="paragraf2" name="paragraf2" class="paragraf">YBS</p>
-<img src="img/balon.jpg" alt="Uçan balon" width="100px" height="100px">
-<img src="https://picsum.photos/id/237/200/300" alt="Siyah köpek resmi" width="100px" height="100px" >
-
-<!-- Listeler Meni yapımında kullanılan bir etiket-->
-<ul>
-Unoredered List  
-    <li>Liste 1</li>
-    <li>Liste 2</li> 
-</ul>
-
-<ol>
-Ordered List
-    <li>Liste 1</li>
-    <li>Liste 2</li>
-</ol>
-
-<ul>
-    <li>Home</li>
-    <li>Sections</li>
-    <ul>
-        <li>Healt</li>
-        <li>Food</li>
-    </ul>
-    <li>About Us</li>
-</ul>
-<a href="#">Tıkla</a>
-<a href="mailto:canaydinn@gmail.com">Mail atmak için Tıkla</a>
-<a href="./img/balon.jpg">Resim  için Tıkla</a>
-
-<table border="1">
-    <th>Name</th>
-    <th>Position</th>
-    <th>Office</th>
-    <th>Age</th>
-    <th>Start Date</th>
-    <tr>
-        <td>Can</td>
-        <td>Manager</td>
-        <td>Buca</td>
-        <td>39</td>
-        <td>23.04.2008</td>
-    </tr>
-    <tr>
-        <td colspan="5">Ara Satır</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Can</td>
-        <td>39</td>
-        <td>23.04.2008</td>
-    </tr>
-    <tr>
-        <td>Can</td>
-        <td>Manager</td>
-        <td>Buca</td>
-        <td>39</td>
-        <td>24.04.2016</td>
-
-        </tr>
-
-</table>
+<form method="post" action="kayit.php">
+    <label for="kimlik_no">TC:</label>
+    <input type="text" id="kimlik_no" name="kimlik_no" placeholder="Lütfen TC no giriniz" maxlength="11">
+    <label for="sifre">Şifre</label>
+    <input type="password" id="sifre" name="sifre">
+    <input type="hidden" value="194.21.125.205">
+    <input type="checkbox" value="programlama"><label>Programlama</label>
+    <input type="checkbox" value="web_tasasrım"><label>web_tasasrım</label>
+    <input type="radio" id="erkek" name="cinsiyet" value="erkek"><label>erkek</label>
+    <input type="radio" id="kadin" name="cinsiyet" value="kadin"><label>kadın</label> -->
+    <select id="Ders_sec" name="Ders_sec">
+        <option>Lütfen ders seçiniz</option>
+        <option value="ybs2001">Programlaama</option>
+        <option value="ybs2002">Programlaama 2</option>
+        <option value="ybs2008">Web tasarım</option>
+    </select>
+    <input type="date">
+    <input type="color">
+    <input type="email">
+    <input type="number">
+    <input type="range" min="1" max="100" value="5">
+    <textarea name="adres" columns="10"></textarea>
+    <input type="url" pattern="https://">
+    <input type="tel" placeholder="XXX XXX XX XX" pattern="^\d{3} \d{3} \d{2} \d{2}$">
+    <input type="submit" value="Gönder">
+    <input type="reset" value="Temizle">
+</form>
 </body>
 </html>
